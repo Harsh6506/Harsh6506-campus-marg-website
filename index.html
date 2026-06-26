@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Marg - Integrated HR Solutions & Staffing Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">CM</span>
+                    <span class="logo-text">Campus Marg</span>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#jobs" onclick="closeMenu()">Jobs</a></li>
+                    <li><a href="#team" onclick="closeMenu()">Team</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta">
+                    <button class="btn btn-outline" onclick="openHireModal()">Hire Talent</button>
+                    <button class="btn btn-primary" onclick="openJobModal()">Find Jobs</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Building <span class="highlight">Better Businesses</span> Through Talent
+            </h1>
+            <p class="hero-subtitle">
+                Trusted by Fortune 500 companies. We connect exceptional talent with growth-focused organizations.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg" onclick="openHireModal()">
+                    <span class="btn-icon">👔</span> I'm Hiring
+                </button>
+                <button class="btn btn-secondary btn-lg" onclick="openJobModal()">
+                    <span class="btn-icon">💼</span> Find Jobs
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p>+ Companies</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="10000">0</h3>
+                    <p>+ Placements</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p>+ Years</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="illustration">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Campus Marg</h2>
+                <p>Leading HR solutions provider in India</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>
+                        Campus Marg is an integrated HR service provider specializing in talent acquisition, staffing solutions, and workforce management. We've been transforming businesses by connecting exceptional talent with growth-focused organizations.
+                    </p>
+                    <p>
+                        With a team of experienced professionals and a network spanning multiple industries, we deliver customized HR solutions that drive business success.
+                    </p>
+                    <ul class="about-list">
+                        <li>✓ 500+ Corporate Clients</li>
+                        <li>✓ 10,000+ Successful Placements</li>
+                        <li>✓ 12+ Industries Covered</li>
+                        <li>✓ Pan-India Operations</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <h4>Mission</h4>
+                        <p>To create meaningful employment connections and build thriving organizations.</p>
+                    </div>
+                    <div class="about-card">
+                        <h4>Vision</h4>
+                        <p>To be India's most trusted HR solutions partner for talent and organizational growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive HR solutions tailored to your needs</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Temporary Staffing</h3>
+                    <p>Quick, flexible workforce solutions for project-based or seasonal staffing needs.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Permanent Staffing</h3>
+                    <p>Full-time placement services for IT and Non-IT positions across all levels.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Recruitment Process Outsourcing</h3>
+                    <p>End-to-end RPO solutions to streamline your hiring process and reduce costs.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Contract to Hire</h3>
+                    <p>Bridge hiring model to evaluate candidates before making permanent commitments.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Train, Hire & Deploy</h3>
+                    <p>Skill development programs with guaranteed placement opportunities.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Payroll Management</h3>
+                    <p>Comprehensive payroll processing, compliance, and benefits administration.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Executive Leadership Hiring</h3>
+                    <p>Specialized C-suite and senior management recruitment services.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Consulting Services</h3>
+                    <p>Strategic HR consulting to optimize your workforce and business operations.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Expertise across diverse business sectors</p>
+            </div>
+
+            <div class="industries-grid">
+                <div class="industry-tag">Information Technology</div>
+                <div class="industry-tag">Telecom</div>
+                <div class="industry-tag">ITES / Non-IT</div>
+                <div class="industry-tag">Education</div>
+                <div class="industry-tag">Financial Services</div>
+                <div class="industry-tag">Healthcare</div>
+                <div class="industry-tag">Pharma</div>
+                <div class="industry-tag">Insurance</div>
+                <div class="industry-tag">Manufacturing</div>
+                <div class="industry-tag">Aviation</div>
+                <div class="industry-tag">Retail</div>
+                <div class="industry-tag">E-Commerce</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <!--<section id="jobs" class="jobs section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Open Positions</h2>
+                <p>Join our partner companies</p>
+            </div>
+
+            <div class="jobs-filter">
+                <input type="text" id="jobSearch" placeholder="Search by job title or company..." class="filter-input">
+                <select id="jobFilter" class="filter-select">
+                    <option value="">All Categories</option>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Operations">Operations</option>
+                </select>
+            </div>
+
+            <div class="jobs-grid" id="jobsList">
+                <div class="job-card" data-category="IT">
+                    <div class="job-header">
+                        <h3>Senior Software Engineer</h3>
+                        <span class="job-tag">IT</span>
+                    </div>
+                    <p class="job-company">Wipro</p>
+                    <p class="job-location">📍 Bangalore, India</p>
+                    <p class="job-salary">₹12-18 LPA</p>
+                    <p class="job-desc">5+ years experience in Java/Python development. Lead technical teams and design scalable systems.</p>
+                    <div class="job-footer">
+                        <span class="job-experience">5+ Yrs</span>
+                        <button class="btn btn-small" onclick="openApplicationModal('Senior Software Engineer', 'Wipro')">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="HR">
+                    <div class="job-header">
+                        <h3>HR Manager</h3>
+                        <span class="job-tag">HR</span>
+                    </div>
+                    <p class="job-company">Tech Mahindra</p>
+                    <p class="job-location">📍 Pune, India</p>
+                    <p class="job-salary">₹8-12 LPA</p>
+                    <p class="job-desc">Manage recruitment, employee relations, and performance management for 200+ team members.</p>
+                    <div class="job-footer">
+                        <span class="job-experience">3+ Yrs</span>
+                        <button class="btn btn-small" onclick="openApplicationModal('HR Manager', 'Tech Mahindra')">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="Sales">
+                    <div class="job-header">
+                        <h3>Sales Executive</h3>
+                        <span class="job-tag">Sales</span>
+                    </div>
+                    <p class="job-company">Reliance Jio</p>
+                    <p class="job-location">📍 Mumbai, India</p>
+                    <p class="job-salary">₹4-8 LPA</p>
+                    <p class="job-desc">Achieve sales targets, manage client relationships, and expand market reach in assigned territory.</p>
+                    <div class="job-footer">
+                        <span class="job-experience">2+ Yrs</span>
+                        <button class="btn btn-small" onclick="openApplicationModal('Sales Executive', 'Reliance Jio')">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="Operations">
+                    <div class="job-header">
+                        <h3>Operations Analyst</h3>
+                        <span class="job-tag">Operations</span>
+                    </div>
+                    <p class="job-company">Genpact</p>
+                    <p class="job-location">📍 Hyderabad, India</p>
+                    <p class="job-salary">₹5-7 LPA</p>
+                    <p class="job-desc">Optimize business processes, manage workflows, and improve operational efficiency metrics.</p>
+                    <div class="job-footer">
+                        <span class="job-experience">1+ Yrs</span>
+                        <button class="btn btn-small" onclick="openApplicationModal('Operations Analyst', 'Genpact')">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="IT">
+                    <div class="job-header">
+                        <h3>Frontend Developer</h3>
+                        <span class="job-tag">IT</span>
+                    </div>
+                    <p class="job-company">Infocepts</p>
+                    <p class="job-location">📍 Delhi, India</p>
+                    <p class="job-salary">₹6-10 LPA</p>
+                    <p class="job-desc">Build responsive web applications using React/Vue. Create engaging user interfaces and optimize performance.</p>
+                    <div class="job-footer">
+                        <span class="job-experience">2+ Yrs</span>
+                        <button class="btn btn-small" onclick="openApplicationModal('Frontend Developer', 'Infocepts')">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="Sales">
+                    <div class="job-header">
+                        <h3>Business Development Manager</h3>
+                        <span class="job-tag">Sales</span>
+                    </div>
+                    <p class="job-company">Sutherland</p>
+                    <p class="job-location">📍 Chennai, India</p>
+                    <p class="job-salary">₹7-11 LPA</p>
+                    <p class="job-desc">Identify new business opportunities, develop partnerships, and drive revenue growth initiatives.</p>
+                    <div class="job-footer">
+                        <span class="job-experience">4+ Yrs</span>
+                        <button class="btn btn-small" onclick="openApplicationModal('Business Development Manager', 'Sutherland')">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-jobs">
+                <button class="btn btn-primary btn-lg">View All Positions</button>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Team Section -->
+    <section id="team" class="team section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Experts</h2>
+                <p>Experienced professionals dedicated to your success</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="member-initial">DR</span>
+                    </div>
+                    <h3>Dillesh Rao</h3>
+                    <p class="member-role">Founder & CEO</p>
+                    <p class="member-bio">Visionary leader with 15+ years in HR solutions and business growth.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="member-initial">NL</span>
+                    </div>
+                    <h3>Narasimha Rao Lingam</h3>
+                    <p class="member-role">Advisor - Hiring Lead</p>
+                    <p class="member-bio">Expert in talent acquisition with 12+ years of recruitment experience.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="member-initial">AB</span>
+                    </div>
+                    <h3>Abhishek Bhardwaj</h3>
+                    <p class="member-role">Advisor - TA Lead</p>
+                    <p class="member-bio">Strategic talent acquisition specialist with expertise in IT recruitment.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <span class="member-initial">AH</span>
+                    </div>
+                    <h3>Ashweeja Harathalu</h3>
+                    <p class="member-role">Advisor - DGM HR</p>
+                    <p class="member-bio">Human resources specialist focused on organizational development.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span class="member-initial">AK</span>
+                    </div>
+                    <h3>Abdullah Khan</h3>
+                    <p class="member-role">Advisor - Resource Management</p>
+                    <p class="member-bio">Expert in workforce planning and resource optimization strategies.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <span class="member-initial">NP</span>
+                    </div>
+                    <h3>Neha Pagraj</h3>
+                    <p class="member-role">HR Operations</p>
+                    <p class="member-bio">Operations specialist ensuring seamless HR process execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted By Leading Companies</h2>
+                <p>Our success is built on partnerships with industry leaders</p>
+            </div>
+
+            <div class="clients-grid">
+                <div class="client-logo">Wipro</div>
+                <div class="client-logo">Tech Mahindra</div>
+                <div class="client-logo">Genpact</div>
+                <div class="client-logo">Reliance Jio</div>
+                <div class="client-logo">GeBBs</div>
+                <div class="client-logo">Infocepts</div>
+                <div class="client-logo">Sutherland</div>
+                <div class="client-logo">Conneqt</div>
+                <div class="client-logo">SYKES</div>
+                <div class="client-logo">247.ai</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our clients are saying about us</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Campus Marg provided us with top-quality talent that perfectly fitted our company culture. Their understanding of our needs was exceptional!"
+                    </p>
+                    <p class="testimonial-author">- HR Manager, Wipro</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Professional, efficient, and reliable. They managed our recruitment process seamlessly and delivered results beyond expectations."
+                    </p>
+                    <p class="testimonial-author">- Operations Lead, Tech Mahindra</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The training and placement program was outstanding. Our team members have become valuable assets to the organization."
+                    </p>
+                    <p class="testimonial-author">- Director, Genpact</p>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevBtn" onclick="prevTestimonial()">❮</button>
+                <button class="carousel-btn" id="nextBtn" onclick="nextTestimonial()">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta section-padding">
+        <div class="container">
+            <h2>Ready to Transform Your Workforce?</h2>
+            <p>Let's talk about your staffing needs and find the perfect solution for your organization.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-lg" onclick="openHireModal()">Start Hiring Today</button>
+                <button class="btn btn-secondary btn-lg" onclick="openJobModal()">Browse Opportunities</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <p>dillesh@campusmarg.com</p>
+                        <p>info@campusmarg.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📱 Call Us</h3>
+                        <p>+91 XXXX-XXX-XXXX</p>
+                        <p>Mon - Fri, 9 AM - 6 PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📍 Location</h3>
+                        <p>Pan-India Operations</p>
+                        <p>Hyderabad, Telangana</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="staffing">Temporary Staffing</option>
+                            <option value="permanent">Permanent Staffing</option>
+                            <option value="rpo">RPO Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Campus Marg</h4>
+                    <p>Building better businesses through exceptional talent.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/campusmargindia" target="_blank">f</a>
+                        <a href="https://twitter.com/campusmargindia" target="_blank">𝕏</a>
+                        <a href="https://instagram.com/dillesh91" target="_blank">📷</a>
+                        <a href="https://linkedin.com/company/campusmarg" target="_blank">in</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Temporary Staffing</a></li>
+                        <li><a href="#">Permanent Staffing</a></li>
+                        <li><a href="#">Recruitment Process Outsourcing</a></li>
+                        <li><a href="#">Executive Hiring</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#jobs">Opportunities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Subscribe</h4>
+                    <p>Get the latest job opportunities delivered to your inbox.</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn btn-small">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Campus Marg. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="hireModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeHireModal()">&times;</button>
+            <h2>Post a Job</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Company Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Job Title" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Location" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Experience Level</option>
+                        <option value="entry">Entry Level</option>
+                        <option value="mid">Mid Level</option>
+                        <option value="senior">Senior</option>
+                        <option value="lead">Lead/Manager</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Job Description" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Submit Job Posting</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeJobModal()">&times;</button>
+            <h2>Find Your Perfect Job</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Preferred Job Category</option>
+                        <option value="IT">IT</option>
+                        <option value="HR">HR</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Operations">Operations</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="file" placeholder="Upload Resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Apply Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeApplicationModal()">&times;</button>
+            <h2>Apply for Position</h2>
+            <p id="jobTitle" style="color: #667eea; font-weight: 600; margin-bottom: 20px;"></p>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Years of Experience" required>
+                </div>
+                <div class="form-group">
+                    <input type="file" placeholder="Upload Resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Why are you interested in this role?" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
