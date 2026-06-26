@@ -660,6 +660,7 @@ body {
     height: 100px;
     margin: 0 auto 20px;
     border-radius: 50%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,6 +673,13 @@ body {
     font-size: 18px;
     margin-bottom: 5px;
     color: var(--dark);
+}
+
+.member-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .member-role {
